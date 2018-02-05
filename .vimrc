@@ -7,6 +7,7 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'mhartington/oceanic-next'
 "Plug 'drewtempelmeyer/palenight.vim'
 Plug 'edkolev/tmuxline.vim'
+Plug 'dracula/vim'
 "Plug 'Yggdroot/indentLine'
 
 call plug#end()
@@ -43,6 +44,8 @@ set noshowmode
 "endif
 
 " for vim 8
+let &t_8f="\<Esc>[38;2;%lu;%lu;%lum"
+let &t_8b="\<Esc>[48;2;%lu;%lu;%lum"
 if (has("termguicolors"))
  set termguicolors
 endif
@@ -60,13 +63,6 @@ colorscheme OceanicNext
 "let ayucolor="mirage" " for mirage version of theme
 "let ayucolor="dark"   " for dark version of theme
 "colorscheme ayu
-
-" IndentLine {{
-let g:indentLine_char = ''
-let g:indentLine_first_char = ''
-let g:indentLine_showFirstIndentLevel = 1
-let g:indentLine_setColors = 0
-" }}
 
 
 " General vim configs
