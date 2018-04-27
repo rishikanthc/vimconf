@@ -7,7 +7,8 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'mhartington/oceanic-next'
 "Plug 'drewtempelmeyer/palenight.vim'
 Plug 'edkolev/tmuxline.vim'
-Plug 'dracula/vim'
+Plug 'challenger-deep-theme/vim'
+Plug 'joshdick/onedark.vim'
 "Plug 'Yggdroot/indentLine'
 
 call plug#end()
@@ -53,10 +54,11 @@ endif
 
 " Theme
 syntax enable
-let g:oceanic_next_terminal_bold = 1
-let g:oceanic_next_terminal_italic = 1
-colorscheme OceanicNext
-
+"let g:oceanic_next_terminal_bold = 1
+"let g:oceanic_next_terminal_italic = 1
+"colorscheme OceanicNext
+"colorscheme challenger_deep
+colorscheme onedark
 "ayu Theme settings
 "set termguicolors     " enable true colors support
 "let ayucolor="light"  " for light version of theme
